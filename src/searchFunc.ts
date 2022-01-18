@@ -1,9 +1,9 @@
 interface SearchOptions {
-    columnName:string|number,
+    columnName:string,
     searchText:string
 }
 
-export function searchData(data:object[], options:SearchOptions) {
+export function searchData <T extends object>(data:T[], options:SearchOptions) {
     const {columnName, searchText} = options
 
     if (data.length === 0) return []
@@ -14,9 +14,8 @@ export function searchData(data:object[], options:SearchOptions) {
         throw new ReferenceError(`"${columnName}" this key does not exist`)
     }
     else{
-        return(data.filter((item: object) => {
-            let val = String(item[columnName as keyof object]);
-            val = val.toLowerCase();
+        return(data.filter(<T>(item: T) => {
+            let val = String(item[columnName as keyof T]).toLowerCase();
             let lengthOfSearchText = searchText.length;
             return (val.slice(0, lengthOfSearchText) === searchText.toLowerCase())
         }))
