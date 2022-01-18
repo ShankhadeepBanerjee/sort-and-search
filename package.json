@@ -1,7 +1,7 @@
 {
   "name": "sort-and-search",
   "version": "1.0.0",
-  "description": "This is a library providing sort and search utility in collection of objects",
+  "description": "This is a library providing sort and search utility for collection/array of objects",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
