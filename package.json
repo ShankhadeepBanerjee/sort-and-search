@@ -1,0 +1,23 @@
+{
+  "name": "sort-and-search",
+  "version": "1.0.0",
+  "description": "This is a library providing sort and search utility in collection of objects",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShankhadeepBanerjee/sort-and-search.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShankhadeepBanerjee/sort-and-search/issues"
+  },
+  "homepage": "https://github.com/ShankhadeepBanerjee/sort-and-search#readme",
+  "files": [
+    "lib/**/*"
+  ]
+}
